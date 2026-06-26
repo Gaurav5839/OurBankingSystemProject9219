@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head>
+	   <title>balance check Account page</title> 
+	   <link rel="stylesheet" href="balanceStyle.css"> 
+</head>
+
+<body>
+	  
+	<h2>Check Balance</h2>
+
+<div class="container">
+	
+	<form action="/balance" method="post">
+	    Account No: <input type="text" name="accountNumber">
+	    <button>Check</button>
+	</form>
+
+	<div th:if="${account != null}">
+	    <p>Name: <span th:text="${account.name}"></span></p>
+	    <p>Balance: <span th:text="${account.balance}"></span></p>
+	</div>
+
+</div>
+		
+</body>

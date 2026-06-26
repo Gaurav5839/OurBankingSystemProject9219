@@ -1,0 +1,41 @@
+body{
+		
+	     text-align:center; 
+		 margin:300px;	
+		 background-image:url("bank_image.jpg");
+	     background-size:cover;		 
+}
+
+
+h2{
+	
+	      font-weight:bold;
+	      color:black;
+		  background-color: skyblue;
+		  width:550px;
+		  border: 2px solid black;
+}
+
+div{
+		  
+	  height:300px;
+	  width:550px;
+	  border: 2px solid black;
+	  background-color: pink;	  
+}
+
+.links a{
+	
+	
+		     margin:50px;
+	         font-weight:bold;
+			 color:black;
+	         text-decoration:none;
+			    
+}
+
+.links a:hover{	   
+	
+	           font-size:20px;
+	           text-transform:uppercase;
+}

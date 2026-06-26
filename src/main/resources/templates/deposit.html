@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head>
+	   <title>deposite Account page</title>  
+	   <link rel="stylesheet" href="depositeStyle.css">
+</head>
+
+<body>
+	
+	<h2>Deposit</h2>
+
+<div>
+	
+	<form action="/deposit" method="post">
+	    Account No: <input type="text" name="accountNumber"><br><br>
+	    Amount: <input type="number" name="amount"><br><br>
+	    <button>Deposit</button>
+	</form>
+
+	<p th:text="${msg}"></p>
+
+</div>
+		
+</body>

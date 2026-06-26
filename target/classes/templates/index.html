@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head>
+	   <title>index page</title>
+	   <link rel="stylesheet" href="indexstyle.css">
+</head>
+
+<body>
+	
+<h2>Banking System</h2>
+
+<div class="links">
+	
+<a href="/open">Open Account</a>  
+<br>  </br>
+<a href="/check">Check Account</a> 
+<br>  </br>
+<a href="/deposit">Deposit</a>
+<br>  </br>
+<a href="/withdraw">Withdraw</a>
+<br>  </br>
+<a href="/balance">Check Balance</a>
+
+<p th:text="${msg}"></p>
+
+</div>
+
+</body>

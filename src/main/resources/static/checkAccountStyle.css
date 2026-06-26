@@ -1,0 +1,25 @@
+body{
+	     text-align:center; 
+	     margin:150px;
+		 background-color:#6DD5FA;
+}
+
+h2{
+	
+	      font-weight:bold;
+	      color:black;	
+		  
+}
+
+.container{
+          background-color: pink;	  
+		  height: 200px;
+		  width:1000px;
+		  padding: 10px;
+		  		  
+	 
+}
+
+button{
+	  background-color: green;
+}

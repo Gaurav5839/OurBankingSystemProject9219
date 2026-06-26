@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head>
+	   <title>open Account page</title>
+	   <link rel="stylesheet" href="openAccountStyle.css">
+</head>
+
+<body>
+	
+	<h2>Open New Account</h2>
+
+<div>
+
+	<form action="/open" method="post">
+
+	    Name: <input type="text" name="name"><br><br>
+
+	    Aadhaar: <input type="text" name="aadhaar" required><br><br>
+
+	    Set PIN: <input type="password" name="pin" required><br><br>
+
+	    Open Date: <input type="date" name="openDate"><br><br>
+
+	    <button type="submit">Open Account</button>
+
+	</form>  
+	
+</div>
+	
+</body>
+	

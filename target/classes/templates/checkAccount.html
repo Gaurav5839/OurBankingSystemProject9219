@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head>
+	   <title>check Account page</title>
+	   <link rel="stylesheet" href="checkAccountStyle.css">
+</head>
+
+<body>
+	
+	<h2>Check Account</h2>
+
+<div class="container">
+	
+	<form action="/check" method="post">
+	    Account No: <input type="text" name="accountNumber">
+	    <button>Search</button>
+	</form>
+
+	<div th:if="${account != null}">
+	    <p>Name: <span th:text="${account.name}"></span></p>
+	    <p>Aadhaar: <span th:text="${account.aadhaar}"></span></p>
+	    <p>Balance: <span th:text="${account.balance}"></span></p>
+	    <p>Date: <span th:text="${account.openDate}"></span></p>
+	</div>
+	
+</div>	
+	
+</body>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head>
+	   <title>withdraw Account page</title>  
+	   <link rel="stylesheet" href="withdrawStyle.css">
+</head>
+
+<body>
+	  
+	<h2>Withdraw (Secure)</h2>
+
+<div>
+	
+	<form action="/withdraw" method="post">
+
+	    Account No: <input type="text" name="accountNumber"><br><br>
+
+	    Aadhaar: <input type="text" name="aadhaar"><br><br>
+
+	    PIN: <input type="password" name="pin"><br><br>
+
+	    Amount: <input type="number" name="amount"><br><br>
+
+	    <button>Withdraw</button>
+	</form>
+	
+	<p th:text="${msg}"></p>
+	
+</div>
+	    
+</body>
